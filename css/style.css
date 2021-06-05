@@ -3,11 +3,85 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+button {
+  background-color: #2acfcf;
+  color: white;
+  border: none;
+  border-radius: 2em;
+  padding: .4em 1.1em;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #a9e6e6;
 }
 
 /*sección de Chava*/
+header {
+  height: 70px;
+  width: 100vw;
+  padding: 0 11%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header img {
+  height: 30px;
+}
+
+header .hamburger {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #bfbfbf;
+  border-radius: unset;
+  background-color: transparent;
+}
+
+header nav {
+  display: none;
+}
+
+header nav ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li {
+  padding: 0 12px;
+}
+
+header nav ul li.sign-up-button {
+  padding-right: 0;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: gray;
+}
+
 main .hero-wrapper {
   /*sección de Ubaldo*/
+  margin-top: 70px;
 }
 
 main .statistics-wrapper {
@@ -15,4 +89,28 @@ main .statistics-wrapper {
 }
 
 /*sección de Chava*/
+@media only screen and (min-width: 400px) {
+  header img {
+    margin-right: 15px;
+  }
+  header .hamburger {
+    display: none;
+  }
+  header nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  main .hero-wrapper {
+    /*sección de Ubaldo*/
+  }
+  main .statistics-wrapper {
+    /*sección de Karen*/
+  }
+  /*sección de Chava*/
+}
 /*# sourceMappingURL=style.css.map */
