@@ -1,7 +1,7 @@
 $cyan: hsl(180, 66%, 49%);
 $dark-violet: hsl(257, 27%, 26%);
-$gray: hsl(0, 0%, 75%);
-$grayish-violet: hsl(257, 7%, 63%);
+$gray: hsl(0, 0%, 75%)
+$grayish-violet: hsl(230, 25%, 95%); /*colores tarjetas de Karen*/
 $very-dark-blue: hsl(255, 11%, 22%);
 $very-dark-violet: hsl(260, 8%, 14%);
 $poppins: 'Poppins', sans-serif;
@@ -11,6 +11,7 @@ $side-paddings: 11%;
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: $poppins;
 
 }
 
@@ -25,14 +26,25 @@ main{
     .search-wrapper{
 
     }
-    .statistics-wrapper{   /*sección de Karen*/
+    &.statistics-wrapper{   /*sección de Karen*/
+        background-color: $gray
+        }
+        &.cards-wrapper{
+            background-color: white;
+            &.card{
+                width: 330px;
+                img{
+
+                }
+            }
+        }
 
     }
-    .boost-wrapper{
+    &.boost-wrapper{
 
     }
 
-}
+
 
 /*sección de Chava*/
 footer{

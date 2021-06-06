@@ -3,6 +3,7 @@
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 /*sección de Chava*/
@@ -12,7 +13,25 @@ main .hero-wrapper {
 
 main .statistics-wrapper {
   /*sección de Karen*/
+  background-color: #eff0f5;
+}
+
+main.cards-wrapper {
+  background-color: white;
+}
+
+main.cards-wrapper.card {
+  width: 330px;
 }
 
 /*sección de Chava*/
+@media only screen and (min-width: 1440px) {
+  main .hero-wrapper {
+    /*sección de Ubaldo*/
+  }
+  main .statistics-wrapper {
+    /*sección de Karen*/
+  }
+  /*sección de Chava*/
+}
 /*# sourceMappingURL=style.css.map */
