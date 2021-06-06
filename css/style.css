@@ -1,6 +1,7 @@
 @charset "UTF-8";
 * {
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Poppins", sans-serif;
@@ -102,7 +103,73 @@ main .statistics-wrapper {
 }
 
 /*sección de Chava*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #232127;
+  padding-bottom: 2em;
+}
+
+footer .logo {
+  height: 30px;
+  margin: 3em;
+  -webkit-filter: invert(100%) sepia(10%) saturate(0%) hue-rotate(91deg) brightness(104%) contrast(104%);
+          filter: invert(100%) sepia(10%) saturate(0%) hue-rotate(91deg) brightness(104%) contrast(104%);
+}
+
+footer .footer-links {
+  margin-bottom: 2em;
+}
+
+footer .footer-links * {
+  color: white;
+}
+
+footer .footer-links h4 {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+footer .footer-links li {
+  list-style: none;
+  text-align: center;
+}
+
+footer .footer-links li:not(:last-of-type) {
+  margin-bottom: .5em;
+}
+
+footer .footer-links a {
+  text-decoration: none;
+}
+
+footer .media-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .media-icons img {
+  width: 1em;
+  height: 1em;
+  margin: 0 .8em;
+}
+
 @media only screen and (min-width: 400px) {
+  header {
+    padding: 0 11%;
+  }
   header img {
     margin-right: 15px;
   }
@@ -125,5 +192,32 @@ main .statistics-wrapper {
     /*sección de Karen*/
   }
   /*sección de Chava*/
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3em 11% 1em;
+  }
+  footer .logo {
+    margin: 0;
+  }
+  footer .footer-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer .footer-content .footer-links {
+    margin-right: 4em;
+  }
+  footer .footer-content .footer-links h4, footer .footer-content .footer-links li {
+    text-align: unset;
+  }
 }
 /*# sourceMappingURL=style.css.map */
