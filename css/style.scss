@@ -6,7 +6,9 @@ $very-dark-blue: hsl(255, 11%, 22%);
 $very-dark-violet: hsl(260, 8%, 14%);
 $poppins: 'Poppins', sans-serif;
 $body-font-size: 18px;
-$side-paddings: 11%;
+$desktop-side-paddings: 11%;
+$mobile-side-paddings: 6%;
+
 
 *{
     margin: 0;
@@ -31,7 +33,7 @@ button{
 header{
     height: 70px;
     width: 100vw;
-    padding: 0 $side-paddings ;
+    padding: 0 $mobile-side-paddings ;
     position: fixed;
     top: 0;
     left: 0;
@@ -45,14 +47,23 @@ header{
     }
 
     .hamburger{
-        width: 30px;
-        height: 30px;
-        border: 1px solid $gray;
-        border-radius: unset;
+        padding: 0;
+        width: 25px;
+        height: 25px;
+        border-top: 4px solid $gray;
+        border-bottom: 4px solid $gray;;
+        border-radius: initial;
         background-color: transparent;
-        // ::after{
-        //     box-shadow: 0 10px 10px 0 black;
-        // }
+        position: relative;
+        &:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 7px;
+            width: 25px;
+            height: 4px;
+            background-color: $gray;
+        }
     }
     nav {
         display: none;
