@@ -243,6 +243,7 @@ main .statistics-wrapper .cards-wrapper .card div {
   position: absolute;
   left: calc(50% - 33px);
   bottom: calc(85%);
+  z-index: 999;
 }
 
 main .statistics-wrapper .cards-wrapper .card h3 {
@@ -255,6 +256,21 @@ main .statistics-wrapper .cards-wrapper .card p {
   padding: 1rem;
   text-align: center;
   line-height: 1.8rem;
+}
+
+main .statistics-wrapper .cards-wrapper .card.line-cyan {
+  position: relative;
+}
+
+main .statistics-wrapper .cards-wrapper .card.line-cyan::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background-color: #2acfcf;
+  width: 6px;
+  height: 4rem;
+  left: calc(50% - 3px);
+  top: 100%;
 }
 
 main .boost-wrapper {
@@ -347,7 +363,7 @@ footer .media-icons img {
   margin: 0 .8em;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 1440px) {
   header {
     padding: 0 11%;
   }
@@ -443,6 +459,10 @@ footer .media-icons img {
             align-items: stretch;
     margin-bottom: 6rem;
   }
+  main .statistics-wrapper .main-paragraph p {
+    padding-right: 25rem;
+    padding-left: 25rem;
+  }
   main .statistics-wrapper .cards-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -454,12 +474,20 @@ footer .media-icons img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    position: relative;
+  }
+  main .statistics-wrapper .cards-wrapper::after {
+    content: " ";
+    background-color: #2acfcf;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: unset;
+    top: 30%;
   }
   main .statistics-wrapper .cards-wrapper .card {
-    height: 275px;
-    /*&:first-child {
-                        align-self: flex-start;
-                    }*/
+    height: 290px;
+    z-index: 998;
   }
   main .statistics-wrapper .cards-wrapper .card div {
     left: 1rem;
@@ -470,14 +498,23 @@ footer .media-icons img {
   }
   main .statistics-wrapper .cards-wrapper .card p {
     text-align: unset;
+    padding-top: 0;
   }
   main .statistics-wrapper .cards-wrapper .card:nth-child(2) {
-    margin-left: 5rem;
-    margin-right: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-top: 2rem;
   }
   main .statistics-wrapper .cards-wrapper .card:last-child {
     margin-top: 4rem;
+  }
+  main .statistics-wrapper .cards-wrapper .card.line-cyan::after {
+    content: " ";
+    height: 5px;
+    width: 4rem;
+    left: unset;
+    top: unset;
+    display: none;
   }
   main .boost-wrapper {
     background-image: url("../images/bg-boost-desktop.svg");
