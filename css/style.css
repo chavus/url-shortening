@@ -95,11 +95,38 @@ header nav ul li a {
 
 main .hero-wrapper {
   /*sección de Ubaldo*/
-  margin-top: 70px;
+  width: 100vw;
+  margin-top: 80px;
+  padding: 0 6%;
+  overflow: hidden;
+}
+
+main .hero-wrapper img {
+  width: 150%;
+}
+
+main .hero-wrapper .hero-content h1 {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.2em;
+  margin-bottom: .4em;
+}
+
+main .hero-wrapper .hero-content p {
+  text-align: center;
+  font-size: 18px;
+  color: #9e9aa7;
+  margin-bottom: .4em;
+}
+
+main .hero-wrapper .hero-content button {
+  display: block;
+  margin: auto;
 }
 
 main .statistics-wrapper {
   /*sección de Karen*/
+  background-color: #9e9aa7;
 }
 
 /*sección de Chava*/

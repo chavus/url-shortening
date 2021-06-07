@@ -90,13 +90,40 @@ header{
 }
 main{
     .hero-wrapper{  /*sección de Ubaldo*/
-        margin-top: 70px;
+        width: 100vw;
+        margin-top: 80px;
+        padding: 0 $mobile-side-paddings;
+        overflow: hidden;
+        img{
+            width: 150%
+        }
+        .hero-content{
+
+            h1{
+                text-align: center;
+                font-size: 36px;
+                line-height: 1.2em;
+                margin-bottom: .4em;
+            }
+            p{
+                text-align: center;
+                font-size: $body-font-size;
+                color: $grayish-violet;
+                margin-bottom: .4em;
+            }
+            button{
+                display: block;
+                margin: auto;
+            }
+        }
+
+
     }
     .search-wrapper{
 
     }
     .statistics-wrapper{   /*sección de Karen*/
-
+        background-color: $grayish-violet;
     }
     .boost-wrapper{
 
