@@ -109,22 +109,46 @@ main{
             p{
                 text-align: center;
                 font-size: $body-font-size;
-                color: $grayish-violet;
-                margin-bottom: .4em;
+                color: $gray;
+                margin-bottom: 1.3em;
+                line-height: 1.8em;
             }
             button{
                 display: block;
                 margin: auto;
+                font-size: 18px;
+                padding: .4em 1.8em;
             }
         }
 
 
     }
     .search-wrapper{
+        height: 140px;
+        background-color: $dark-violet;
+        margin:0 $mobile-side-paddings ;
+        padding: 1.3rem;
+        background-image: url("../images/bg-shorten-mobile.svg");
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        position:relative;
+        top: 70px;
+        input{
+            border:none;
+            font-size: 18px;
+            border-radius: 10px;
+            margin-bottom: .7rem;
+            padding: .4em 1.1em;
+        }
+        button{
+            border-radius: 10px;
+            font-size: 18px;
+        }
 
     }
     .statistics-wrapper{ /*sección Karen*/
-        padding-top: 50px;
+        padding-top: 150px;
         background-color: $grayish-violet;
         padding-right: $mobile-side-paddings;
         padding-left: $mobile-side-paddings;
@@ -247,7 +271,7 @@ footer{
 }
 
 
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 500px){
 
     header{
         padding: 0 $desktop-side-paddings;
@@ -263,12 +287,51 @@ footer{
             width: 100%;
         }
     }
+
     main{
         .hero-wrapper{  /*sección de Ubaldo*/
-    
+
+            display: flex;
+            flex-direction: row-reverse;
+            padding-left: $desktop-side-paddings;
+            padding-right:0 ;
+            img{
+                width: 50%;
+            }
+            .hero-content{
+                h1{
+                    text-align: left;
+                    margin-top: 2rem;
+                    margin-bottom: 0;
+                    font-size: 3rem;
+                }
+                p{
+                    text-align: left;
+                    font-size: 16px;
+                    padding-right: 4rem;
+                }
+                button{
+                    display: initial;
+                    font-size: 16px;
+                }
+            }
+        
+
         }
         .search-wrapper{
-    
+            height: 100px;
+            top:50px;
+            margin:0 $desktop-side-paddings ;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-image: url("../images/bg-shorten-desktop.svg");
+
+            input{
+                width: 80%;
+                margin-bottom: 0;
+            }
+
         }
         .statistics-wrapper{   /*sección de Karen*/
             padding-right: $desktop-side-paddings;
