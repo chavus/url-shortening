@@ -22,7 +22,7 @@ button{
     border:none;
     border-radius: 2em;
     padding: .4em 1.1em;
-    
+    white-space: nowrap;
     &:hover{
         cursor: pointer;
         background-color: #a9e6e6;
@@ -92,7 +92,7 @@ header{
 }
 main{
     .hero-wrapper{  /*sección de Ubaldo*/
-        width: 100vw;
+        width: 100%;
         margin-top: 80px;
         padding: 0 $mobile-side-paddings;
         overflow: hidden;
@@ -300,6 +300,7 @@ footer{
             flex-direction: row-reverse;
             padding-left: $desktop-side-paddings;
             padding-right:0 ;
+
             .hero-image img{
                 width: 118%;
             }
@@ -333,8 +334,9 @@ footer{
             background-image: url("../images/bg-shorten-desktop.svg");
 
             input{
-                width: 80%;
+                width: 100%;
                 margin-bottom: 0;
+                margin-right: 1rem;
             }
 
         }
