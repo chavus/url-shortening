@@ -107,6 +107,7 @@ main{
                 font-size: 36px;
                 line-height: 1.2em;
                 margin-bottom: .4em;
+                color: $very-dark-blue;
             }
             p{
                 text-align: center;
@@ -364,8 +365,8 @@ footer{
                 align-items: stretch;
                 margin-bottom: 6rem;
                 p{
-                    padding-right: 25rem;
-                    padding-left: 25rem;
+                    padding-right: 20rem;
+                    padding-left: 20rem;
                 }
             }
             .cards-wrapper{

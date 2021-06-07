@@ -113,6 +113,7 @@ main .hero-wrapper .hero-content h1 {
   font-size: 36px;
   line-height: 1.2em;
   margin-bottom: .4em;
+  color: #35323e;
 }
 
 main .hero-wrapper .hero-content p {
@@ -462,8 +463,8 @@ footer .media-icons img {
     margin-bottom: 6rem;
   }
   main .statistics-wrapper .main-paragraph p {
-    padding-right: 25rem;
-    padding-left: 25rem;
+    padding-right: 20rem;
+    padding-left: 20rem;
   }
   main .statistics-wrapper .cards-wrapper {
     display: -webkit-box;
