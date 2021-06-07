@@ -29,6 +29,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 9999;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -91,7 +92,7 @@ header nav ul li.sign-up-button {
 
 header nav ul li a {
   text-decoration: none;
-  color: gray;
+  color: #bfbfbf;
 }
 
 main .hero-wrapper {
@@ -102,7 +103,7 @@ main .hero-wrapper {
   overflow: hidden;
 }
 
-main .hero-wrapper img {
+main .hero-wrapper .hero-image img {
   width: 150%;
 }
 
@@ -152,6 +153,22 @@ main .search-wrapper input {
   border-radius: 10px;
   margin-bottom: .7rem;
   padding: .4em 1.1em;
+}
+
+main .search-wrapper input::-webkit-input-placeholder {
+  color: #bfbfbf;
+}
+
+main .search-wrapper input:-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+main .search-wrapper input::-ms-input-placeholder {
+  color: #bfbfbf;
+}
+
+main .search-wrapper input::placeholder {
+  color: #bfbfbf;
 }
 
 main .search-wrapper button {
@@ -361,8 +378,8 @@ footer .media-icons img {
     padding-left: 11%;
     padding-right: 0;
   }
-  main .hero-wrapper img {
-    width: 50%;
+  main .hero-wrapper .hero-image img {
+    width: 118%;
   }
   main .hero-wrapper .hero-content h1 {
     text-align: left;
