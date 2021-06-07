@@ -1,7 +1,7 @@
 $cyan: hsl(180, 66%, 49%);
 $dark-violet: hsl(257, 27%, 26%);
 $gray: hsl(0, 0%, 75%);
-$grayish-violet: hsl(257, 7%, 63%);
+$grayish-violet: hsl(230, 25%, 95%); /*colores tarjetas de Karen*/
 $very-dark-blue: hsl(255, 11%, 22%);
 $very-dark-violet: hsl(260, 8%, 14%);
 $poppins: 'Poppins', sans-serif;
@@ -15,7 +15,6 @@ $mobile-side-paddings: 6%;
     padding: 0;
     box-sizing: border-box;
     font-family: $poppins;
-}
 
 button{
     background-color: $cyan;
@@ -29,6 +28,8 @@ button{
         background-color: #a9e6e6;
     }
 }
+}
+
 
 /*sección de Chava*/
 header{
@@ -122,14 +123,84 @@ main{
     .search-wrapper{
 
     }
-    .statistics-wrapper{   /*sección de Karen*/
+    .statistics-wrapper{ /*sección Karen*/
+        padding-top: 50px;
         background-color: $grayish-violet;
+        padding-right: $mobile-side-paddings;
+        padding-left: $mobile-side-paddings;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .main-paragraph{
+            margin-bottom: 5rem;
+
+            h2{
+                color: $very-dark-blue;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            p{
+                color: $gray;
+                text-align: center;
+                line-height: 1.8rem;
+            }
+        }
+        .cards-wrapper{
+            
+            .card{
+                background-color: white;
+                margin-bottom: 5rem;
+                padding-bottom: 2rem;
+                padding-top: 3rem;
+                position: relative;
+                border-radius: 5px;
+                
+                div{
+                    width: 66px;
+                    height: 66px;
+                    background-color: $dark-violet;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    position: absolute;
+                    left: calc(50% - 33px);
+                    bottom: calc(85%);
+                }
+                h3{
+                    color: $very-dark-blue;
+                    text-align: center;
+                }
+                p{
+                    color: $gray;
+                    padding: 1rem;
+                    text-align: center;
+                    line-height: 1.8rem;
+                }
+            }
+        }
     }
+
     .boost-wrapper{
-
+        background-color: $dark-violet;
+        padding-right: $mobile-side-paddings;
+        padding-right: $mobile-side-paddings;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        height: 300px;
+        background-image: url("../images/bg-boost-mobile.svg");
+        h2{
+            margin-bottom: 1rem;
+        }
     }
-
 }
+
 
 /*sección de Chava*/
 footer{
@@ -176,7 +247,7 @@ footer{
 }
 
 
-@media only screen and (min-width: 400px){
+@media only screen and (min-width: 1200px){
 
     header{
         padding: 0 $desktop-side-paddings;
@@ -200,10 +271,60 @@ footer{
     
         }
         .statistics-wrapper{   /*sección de Karen*/
-    
+            padding-right: $desktop-side-paddings;
+            padding-left: $desktop-side-paddings;
+            display: flex;
+            justify-content: space-between;
+            .main-paragraph{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+                margin-bottom: 6rem;
+            }
+            .cards-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                //align-items: center;
+                //height: 375px;
+
+                .card{
+                    //display: block;
+                    height: 275px;
+                    //width: 28%;
+                    div{
+                        left: 1rem;
+                    }
+                    h3{
+                        text-align: unset;
+                        padding: 1rem;
+                    }
+                    p{
+                        text-align: unset;
+                    }
+                    /*&:first-child {
+                        align-self: flex-start;
+                    }*/
+
+                    &:nth-child(2){
+                        margin-left: 5rem;
+                        margin-right: 5rem;;
+                        margin-top: 2rem;
+                        //align-self: center;
+                    }
+                    
+                    &:last-child {
+                        margin-top: 4rem;
+                    }
+
+
+                }
+            }
         }
         .boost-wrapper{
-    
+            background-image: url("../images/bg-boost-desktop.svg");
+            height: 250px;
         }
     
     }
@@ -228,5 +349,4 @@ footer{
             }
         }
     }
-
 }

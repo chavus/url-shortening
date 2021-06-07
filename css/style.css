@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*colores tarjetas de Karen*/
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 
-button {
+* button {
   background-color: #2acfcf;
   color: white;
   border: none;
@@ -15,7 +16,7 @@ button {
   padding: .4em 1.1em;
 }
 
-button:hover {
+* button:hover {
   cursor: pointer;
   background-color: #a9e6e6;
 }
@@ -115,7 +116,7 @@ main .hero-wrapper .hero-content h1 {
 main .hero-wrapper .hero-content p {
   text-align: center;
   font-size: 18px;
-  color: #9e9aa7;
+  color: #eff0f5;
   margin-bottom: .4em;
 }
 
@@ -125,8 +126,110 @@ main .hero-wrapper .hero-content button {
 }
 
 main .statistics-wrapper {
-  /*sección de Karen*/
-  background-color: #9e9aa7;
+  /*sección Karen*/
+  padding-top: 50px;
+  background-color: #eff0f5;
+  padding-right: 6%;
+  padding-left: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .statistics-wrapper .main-paragraph {
+  margin-bottom: 5rem;
+}
+
+main .statistics-wrapper .main-paragraph h2 {
+  color: #35323e;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main .statistics-wrapper .main-paragraph p {
+  color: #bfbfbf;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+main .statistics-wrapper .cards-wrapper .card {
+  background-color: white;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  padding-top: 3rem;
+  position: relative;
+  border-radius: 5px;
+}
+
+main .statistics-wrapper .cards-wrapper .card div {
+  width: 66px;
+  height: 66px;
+  background-color: #3b3054;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  left: calc(50% - 33px);
+  bottom: calc(85%);
+}
+
+main .statistics-wrapper .cards-wrapper .card h3 {
+  color: #35323e;
+  text-align: center;
+}
+
+main .statistics-wrapper .cards-wrapper .card p {
+  color: #bfbfbf;
+  padding: 1rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+main .boost-wrapper {
+  background-color: #3b3054;
+  padding-right: 6%;
+  padding-right: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: white;
+  height: 300px;
+  background-image: url("../images/bg-boost-mobile.svg");
+}
+
+main .boost-wrapper h2 {
+  margin-bottom: 1rem;
 }
 
 /*sección de Chava*/
@@ -193,7 +296,7 @@ footer .media-icons img {
   margin: 0 .8em;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 1200px) {
   header {
     padding: 0 11%;
   }
@@ -217,6 +320,70 @@ footer .media-icons img {
   }
   main .statistics-wrapper {
     /*sección de Karen*/
+    padding-right: 11%;
+    padding-left: 11%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .statistics-wrapper .main-paragraph {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    margin-bottom: 6rem;
+  }
+  main .statistics-wrapper .cards-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .statistics-wrapper .cards-wrapper .card {
+    height: 275px;
+    /*&:first-child {
+                        align-self: flex-start;
+                    }*/
+  }
+  main .statistics-wrapper .cards-wrapper .card div {
+    left: 1rem;
+  }
+  main .statistics-wrapper .cards-wrapper .card h3 {
+    text-align: unset;
+    padding: 1rem;
+  }
+  main .statistics-wrapper .cards-wrapper .card p {
+    text-align: unset;
+  }
+  main .statistics-wrapper .cards-wrapper .card:nth-child(2) {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 2rem;
+  }
+  main .statistics-wrapper .cards-wrapper .card:last-child {
+    margin-top: 4rem;
+  }
+  main .boost-wrapper {
+    background-image: url("../images/bg-boost-desktop.svg");
+    height: 250px;
   }
   /*sección de Chava*/
   footer {
