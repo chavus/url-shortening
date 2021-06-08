@@ -399,15 +399,18 @@ footer .media-icons img {
   main .hero-wrapper .hero-image img {
     width: 118%;
   }
+  main .hero-wrapper .hero-content {
+    width: 60%;
+  }
   main .hero-wrapper .hero-content h1 {
     text-align: left;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 0;
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
   main .hero-wrapper .hero-content p {
     text-align: left;
-    font-size: 16px;
+    font-size: 1.3rem;
     padding-right: 4rem;
   }
   main .hero-wrapper .hero-content button {
