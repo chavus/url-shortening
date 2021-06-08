@@ -415,11 +415,11 @@ footer .media-icons img {
   }
   main .hero-wrapper .hero-content button {
     display: initial;
-    font-size: 16px;
+    font-size: 1.3rem;
   }
   main .search-wrapper {
-    height: 100px;
-    top: 50px;
+    height: 9rem;
+    top: 4.5rem;
     margin: 0 11%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -432,11 +432,18 @@ footer .media-icons img {
         -ms-flex-pack: justify;
             justify-content: space-between;
     background-image: url("../images/bg-shorten-desktop.svg");
+    padding: 3rem;
   }
   main .search-wrapper input {
     width: 100%;
     margin-bottom: 0;
     margin-right: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  main .search-wrapper button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   main .statistics-wrapper {
     /*sección de Karen*/
@@ -482,6 +489,9 @@ footer .media-icons img {
             justify-content: space-between;
     position: relative;
   }
+  main .statistics-wrapper .cards-wrapper h2 {
+    font-size: 2rem;
+  }
   main .statistics-wrapper .cards-wrapper::after {
     content: " ";
     background-color: #2acfcf;
@@ -525,6 +535,12 @@ footer .media-icons img {
   main .boost-wrapper {
     background-image: url("../images/bg-boost-desktop.svg");
     height: 250px;
+  }
+  main .boost-wrapper h2 {
+    font-size: 2rem;
+  }
+  main .boost-wrapper button {
+    font-size: 1.3rem;
   }
   /*sección de Chava*/
   footer {
