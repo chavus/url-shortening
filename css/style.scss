@@ -49,45 +49,68 @@ header{
         height: 30px;
     }
 
-    .hamburger{
-        padding: 0;
-        width: 25px;
-        height: 25px;
-        border-top: 4px solid $gray;
-        border-bottom: 4px solid $gray;;
-        border-radius: initial;
-        background-color: transparent;
-        position: relative;
-        &:after{
-            content: "";
-            display: block;
-            position: absolute;
-            top: 7px;
-            width: 25px;
-            height: 4px;
-            background-color: $gray;
-        }
-    }
     nav {
-        display: none;
+        background-color: $dark-violet;
+        position: absolute;
+        top: 70px;
+        width: calc(100% - 12%);
+        border-radius: 10px;
+        display:none ;
         ul{
             padding: 0;
             list-style: none;
-            display: flex;
-            align-items: center;
             li{
-                padding: 0 12px; 
-
-                &.sign-up-button{
-                    padding-right: 0;
+                text-align: center;
+                padding: 21px 12px; 
+                margin: 0 1rem;
+                &.sign-up-button button{
+                    width: 80%;                    
                 }
                 a{
                     text-decoration: none;
                     color: $gray;
                 }
+
+                &:nth-child(3){
+                    border-bottom: 1px solid $gray;
+                }
             }
         }
     }
+
+
+        label{
+            cursor: pointer;
+            &:before{
+                content: " ";
+                display: block;
+                position: relative;
+                top: -13px;
+                width: 25px;
+                height: 4px;
+                background-color: $gray;
+                box-shadow: 0 9px 0 $gray, 0 18px 0 $gray;
+            }
+            }
+        input{
+            display: none;
+            &:checked ~ label{
+                    &::before{
+                        display: none;
+                    }
+                    &::after{
+                        content:"X";
+                        position: relative;
+                        font-size: 1.3rem;
+                        color: $gray;
+
+                    }
+                }
+            &:checked ~ nav{
+                display: block;
+            }
+            }
+        // }
 
 }
 main{
@@ -296,13 +319,39 @@ footer{
         img{
             margin-right: 15px;
         }
-        .hamburger{
+        label, input{
             display: none;
         }
         nav{
+            background-color: unset;
+            position: unset;
+            border-radius: unset;
             display: flex;
+            align-items: center;
             justify-content: space-between;
             width: 100%;
+            ul{
+                padding: 0;
+                display: flex;
+                align-items: center;
+                li{
+                    text-align: unset;
+                    margin: unset;
+                    padding: 0 12px; 
+                    &:nth-child(3){
+                        border: none;
+                    }
+                    &.sign-up-button button{
+                        width: unset;
+                        // padding-right: 0;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: $gray;
+                    }
+                }
+            }
+
         }
     }
 
